@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airbnb Exploratory Data Analysis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="airbnb-styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero reveal">
+      <nav class="topbar">
+        <span class="eyebrow">Project Showcase</span>
+        <span class="topbar-note">Airbnb Exploratory Data Analysis</span>
+      </nav>
+
+      <div class="hero-grid">
+        <section class="hero-copy">
+          <p class="section-tag">City Data Story</p>
+          <h1>Exploring how Airbnb listings behave across New York City.</h1>
+          <p class="hero-text">
+            This project analyzes Airbnb listing data from New York City to understand borough-level pricing,
+            room-type distribution, listing concentration, and general market patterns. I used Python-based
+            exploratory data analysis to clean the dataset, inspect trends, and turn the results into a clear project story.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#what-i-did" class="button button-primary">What I Did</a>
+            <a href="#insights" class="button button-secondary">Key Insights</a>
+            <a href="#project-files" class="button button-secondary">Project Files</a>
+          </div>
+
+          <ul class="impact-points">
+            <li>Cleaned raw NYC Airbnb listing data for analysis</li>
+            <li>Compared borough prices, room types, and listing density</li>
+            <li>Used charts and maps to explain urban rental patterns</li>
+          </ul>
+        </section>
+
+        <aside class="hero-visual reveal">
+          <div class="map-card">
+            <img src="assets/airbnb/nyc-map.png" alt="Map of New York City">
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="stats-band reveal">
+        <article class="stat-box">
+          <span class="stat-number" data-count="2">0</span>
+          <span class="stat-caption">Datasets used in the project flow</span>
+        </article>
+        <article class="stat-box">
+          <span class="stat-number" data-count="5">0</span>
+          <span class="stat-caption">Main analysis themes explored</span>
+        </article>
+        <article class="stat-box">
+          <span class="stat-number" data-count="4">0</span>
+          <span class="stat-caption">Skills strengthened through the work</span>
+        </article>
+      </section>
+
+      <section id="what-i-did" class="content-grid">
+        <article class="story-card reveal">
+          <p class="section-tag">What I Did</p>
+          <h2>From raw listings to interpretable city-level patterns</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-step">01</span>
+              <div>
+                <h3>Prepared the Airbnb data</h3>
+                <p>I worked with the NYC Airbnb dataset, cleaned the data, and created a more analysis-ready version for consistent exploratory work.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-step">02</span>
+              <div>
+                <h3>Explored borough-level patterns</h3>
+                <p>I compared listings across Brooklyn, Manhattan, Queens, Staten Island, and the Bronx to understand price differences and market concentration.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-step">03</span>
+              <div>
+                <h3>Studied room-type behavior</h3>
+                <p>I analyzed how private rooms, entire homes or apartments, and shared rooms are distributed across the city.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-step">04</span>
+              <div>
+                <h3>Visualized findings clearly</h3>
+                <p>I used charts, distributions, and map-oriented visuals to make the EDA findings easier to interpret and present.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="story-card reveal">
+          <p class="section-tag">Questions Explored</p>
+          <h2>What this project helps answer</h2>
+          <ul class="question-list">
+            <li>Which boroughs have the highest average Airbnb prices?</li>
+            <li>How are room types distributed across listings?</li>
+            <li>Where are Airbnb listings most concentrated in New York City?</li>
+            <li>How does pricing vary across areas and listing types?</li>
+            <li>What patterns can be seen after cleaning and exploring the data?</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="insights" class="insights-layout">
+        <article class="insights-card reveal">
+          <p class="section-tag">Key Insights</p>
+          <h2>What stands out in the analysis</h2>
+          <div class="insight-grid">
+            <div class="insight-tile">
+              <h3>Manhattan has the highest average price</h3>
+              <p>The borough comparison chart shows Manhattan clearly leading the city in average Airbnb pricing.</p>
+            </div>
+            <div class="insight-tile">
+              <h3>Entire homes and private rooms dominate</h3>
+              <p>Room-type analysis suggests the NYC market is largely driven by entire home or apartment listings and private rooms.</p>
+            </div>
+            <div class="insight-tile">
+              <h3>Shared rooms are much less common</h3>
+              <p>Shared room listings form a small minority compared with the other two room categories.</p>
+            </div>
+            <div class="insight-tile">
+              <h3>Location strongly affects market behavior</h3>
+              <p>Borough and spatial patterns indicate that pricing and listing activity are closely tied to where properties are located.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="gallery-card reveal">
+          <div class="gallery-copy">
+            <p class="section-tag">Visual Highlights</p>
+            <h2>Charts that explain the NYC Airbnb market</h2>
+            <p>
+              These visuals show how price and room type vary across the city and help turn raw listing data
+              into a clearer story about Airbnb patterns in New York.
+            </p>
+          </div>
+          <div class="chart-stack">
+            <figure class="chart-frame">
+              <img src="assets/airbnb/avg-price.png" alt="Average Airbnb price by borough">
+            </figure>
+            <figure class="chart-frame">
+              <img src="assets/airbnb/room-types.png" alt="Distribution of Airbnb room types">
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <section id="project-files" class="project-files reveal">
+        <div class="section-heading">
+          <p class="section-tag">Project Files</p>
+          <h2>The actual analysis assets behind the project</h2>
+        </div>
+
+        <div class="workflow-row">
+          <div class="workflow-node">
+            <span>Source</span>
+            <strong>Raw Airbnb CSV</strong>
+          </div>
+          <div class="workflow-arrow" aria-hidden="true">→</div>
+          <div class="workflow-node">
+            <span>Processing</span>
+            <strong>Cleaned Dataset + Notebook</strong>
+          </div>
+          <div class="workflow-arrow" aria-hidden="true">→</div>
+          <div class="workflow-node">
+            <span>Output</span>
+            <strong>EDA Visual Story</strong>
+          </div>
+        </div>
+
+        <div class="resource-grid">
+          <a class="resource-link" href="file:///C:/Users/Madhuneshwari/OneDrive/MY%20PROJECTS/Airbnb%20Exploratory%20Data%20Analysis/data/AB_NYC_2019.csv">
+            <span class="resource-type">Source Dataset</span>
+            <strong>AB_NYC_2019.csv</strong>
+          </a>
+          <a class="resource-link" href="file:///C:/Users/Madhuneshwari/OneDrive/MY%20PROJECTS/Airbnb%20Exploratory%20Data%20Analysis/data/airbnb_cleaned_data.csv">
+            <span class="resource-type">Cleaned Dataset</span>
+            <strong>airbnb_cleaned_data.csv</strong>
+          </a>
+          <a class="resource-link" href="file:///C:/Users/Madhuneshwari/OneDrive/MY%20PROJECTS/Airbnb%20Exploratory%20Data%20Analysis/notebook/airbnb_eda_analysis.ipynb">
+            <span class="resource-type">Notebook</span>
+            <strong>airbnb_eda_analysis.ipynb</strong>
+          </a>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section reveal">
+        <div class="section-heading">
+          <p class="section-tag">Skills I Learned</p>
+          <h2>What this project helped me practice</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Data Cleaning</h3>
+            <p>I improved how I prepare raw listing data for more reliable exploratory analysis.</p>
+          </article>
+          <article class="skill-card">
+            <h3>Exploratory Data Analysis</h3>
+            <p>I practiced finding useful patterns by comparing borough, price, and room-type behavior.</p>
+          </article>
+          <article class="skill-card">
+            <h3>Visualization</h3>
+            <p>I learned how to use charts and spatial visuals to explain city-level patterns more clearly.</p>
+          </article>
+          <article class="skill-card">
+            <h3>Urban Data Interpretation</h3>
+            <p>I got better at translating location-based patterns into meaningful observations about the market.</p>
+          </article>
+          <article class="skill-card">
+            <h3>Dataset Structuring</h3>
+            <p>I strengthened my workflow of moving from raw CSV data to a cleaned and usable analysis dataset.</p>
+          </article>
+          <article class="skill-card">
+            <h3>Project Storytelling</h3>
+            <p>I practiced presenting EDA work as a neat project case study rather than just a notebook result.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="stack-section reveal">
+        <article class="stack-card">
+          <p class="section-tag">Tools Used</p>
+          <h2>Core workflow behind the analysis</h2>
+          <div class="pill-row">
+            <span class="pill">Python</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">Matplotlib</span>
+            <span class="pill">EDA</span>
+            <span class="pill">CSV Data Processing</span>
+          </div>
+        </article>
+
+        <article class="summary-card">
+          <p class="section-tag">Project Summary</p>
+          <p>
+            This project shows my ability to clean real-world listing data, study how location and room type affect the Airbnb market,
+            and present those findings in a clear, visually structured format.
+          </p>
+          <p class="summary-quote">
+            I used exploratory analysis to turn NYC listing data into an understandable story about place, price, and market structure.
+          </p>
+          <div class="author-block">
+            <span>Created by</span>
+            <strong>Madhuneshwari Jinkala</strong>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="airbnb-script.js"></script>
+</body>
+</html>
